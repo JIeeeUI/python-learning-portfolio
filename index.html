@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Python 기초 학습 목표와 STAR 방식으로 정리한 학습 사례 포트폴리오"
+  >
+  <title>Python 학습 포트폴리오</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="./index.html">Python Learning Log</a>
+      <span class="header-label">LEARNING PORTFOLIO</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">PYTHON · BEGINNER</p>
+      <h1 id="page-title">Python 학습 포트폴리오</h1>
+      <p class="hero-description">
+        Python 기초 개념을 질문하고 예시를 통해 이해한 내용을
+        학습 사례로 정리합니다.
+      </p>
+      <a class="text-link" href="#learning-goals">학습 목표 보기 ↓</a>
+    </section>
+
+    <section
+      id="learning-goals"
+      class="section"
+      aria-labelledby="goals-title"
+    >
+      <div class="section-heading">
+        <p class="eyebrow">01 / LEARNING GOALS</p>
+        <h2 id="goals-title">학습 목표</h2>
+      </div>
+
+      <ul class="goal-list">
+        <li>
+          <span class="goal-number">01</span>
+          <div>
+            <h3>Python 기초 문법 이해</h3>
+            <p>
+              문자열, 자료형, 변수와 문자열 분리의 기본 동작을 이해한다.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="goal-number">02</span>
+          <div>
+            <h3>리스트와 반복문 이해</h3>
+            <p>
+              2차원 리스트를 순회하며 각 항목과 반복 번호의 관계를 이해한다.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="goal-number">03</span>
+          <div>
+            <h3>학습 과정 기록</h3>
+            <p>
+              질문과 설명을 바탕으로 이해한 개념을 STAR 사례로 정리한다.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="cases-title">
+      <div class="section-heading">
+        <p class="eyebrow">02 / STAR CASES</p>
+        <h2 id="cases-title">학습 사례</h2>
+        <p class="section-description">
+          실제 대화에서 확인된 질문과 설명을 중심으로 기록했습니다.
+        </p>
+      </div>
+
+      <article class="case-card">
+        <div class="case-meta">
+          <span class="case-tag">PYTHON BASICS</span>
+          <span class="case-date">학습일 미기록</span>
+        </div>
+
+        <h3>enumerate()와 2차원 리스트 이해하기</h3>
+        <p class="case-intro">
+          학생별 점수 리스트를 반복 처리하는 코드에서
+          반복 번호와 각 항목의 역할을 이해한 사례입니다.
+        </p>
+
+        <div class="star-item">
+          <span class="star-letter">S</span>
+          <div>
+            <h4>Situation · 상황</h4>
+            <p>
+              Python 기초를 학습하며 학생별 점수가 담긴
+              2차원 리스트를 반복문으로 처리하는 코드를 살펴봤다.
+            </p>
+          </div>
+        </div>
+
+        <div class="star-item">
+          <span class="star-letter">T</span>
+          <div>
+            <h4>Task · 과제</h4>
+            <p>
+              <code>enumerate(scores, 1)</code>의 숫자 1이 의미하는 것과
+              반복할 때 <code>i</code>, <code>row</code>에 들어가는 값을
+              이해하고자 했다.
+            </p>
+          </div>
+        </div>
+
+        <div class="star-item">
+          <span class="star-letter">A</span>
+          <div>
+            <h4>Action · 행동</h4>
+            <p>
+              <strong>내가 한 일:</strong>
+              enumerate()의 동작 방식과 반복마다 i의 값이 어떻게
+              변하는지 질문하고, 설명을 바탕으로 이해한 내용을 확인했다.
+            </p>
+            <p>
+              <strong>AI의 도움:</strong>
+              반복 번호와 실제 리스트 인덱스의 차이를 설명하고,
+              각 반복에서 번호와 점수 리스트가 어떻게 대응하는지 예시로 보여 줬다.
+            </p>
+          </div>
+        </div>
+
+        <div class="star-item">
+          <span class="star-letter">R</span>
+          <div>
+            <h4>Result · 결과</h4>
+            <p>
+              enumerate()의 시작 번호 1과 리스트의 실제 인덱스는
+              구분해야 하며, 반복할 때 i에는 번호가,
+              row에는 해당 점수 리스트가 들어간다는 점을 확인했다.
+            </p>
+          </div>
+        </div>
+
+        <p class="record-note">
+          기록 범위: 대화에서 코드 직접 실행이나 수정 여부는 확인되지 않아
+          해당 활동은 결과에 포함하지 않았다.
+        </p>
+      </article>
+
+      <!--
+        다음 학습 사례를 추가할 때 위 article.case-card를 복사한 뒤
+        제목과 STAR 내용을 실제 학습 기록에 맞게 수정하세요.
+        확인되지 않은 활동이나 결과는 작성하지 마세요.
+      -->
+      <div class="future-card">
+        <span class="future-icon" aria-hidden="true">+</span>
+        <div>
+          <h3>다음 학습 사례</h3>
+          <p>
+            새로운 수업이나 실습이 끝나면 날짜, 주제, STAR 내용을
+            추가할 수 있습니다.
+          </p>
+          <span class="future-label">추가 예정 · 학습 기록 미등록</span>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section repository-section"
+      aria-labelledby="repo-title"
+    >
+      <div class="section-heading">
+        <p class="eyebrow">03 / PRACTICE REPOSITORY</p>
+        <h2 id="repo-title">실습 저장소</h2>
+      </div>
+
+      <div class="repository-card">
+        <div>
+          <h3>Python 실습 저장소</h3>
+          <p>
+            Python 학습 기록과 실습 코드를 확인할 수 있습니다.
+          </p>
+        </div>
+
+        <a
+          class="repo-placeholder"
+          href="https://github.com/JIeeeUI/python-learning-portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub 저장소 열기 ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Python Learning Portfolio</p>
+      <p>실제 학습 기록을 바탕으로 작성한 개인 학습 정리</p>
+    </div>
+  </footer>
+</body>
+</html>
